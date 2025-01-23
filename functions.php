@@ -25,8 +25,3 @@ require get_stylesheet_directory() . '/function-parts/svg_upload.php';
  * Підключення stuff
  */
 require get_stylesheet_directory() . '/function-parts/stuff.php';
-<<<<<<< HEAD
-?>
-=======
-?>
->>>>>>> aa140d835fda3a94ee9b771d7d636809708ba57f
