@@ -1,0 +1,15 @@
+@import "colors";
+
+.button {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $primary;
+  color: $white;
+  border: none !important;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}

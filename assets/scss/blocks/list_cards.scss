@@ -1,0 +1,94 @@
+@import "../generals/colors";
+
+.list_cards {
+  margin-bottom: 120px;
+  @media screen and (max-width: 980px) {
+    margin-bottom: 80px;
+  }
+
+  .section_title {
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (max-width: 980px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .section_text {
+    max-width: 1080px;
+    text-align: center;
+    margin: auto auto 48px;
+    @media screen and (max-width: 980px) {
+      margin: auto auto 32px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .list_card {
+      width: 100%;
+      max-width: calc(25% - 20px);
+      margin: 0 10px 20px;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 14px;
+      border: 1px solid $border-light-gray;
+      transition: all .5s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: 980px) {
+        max-width: 100%;
+        margin: 0 0 20px;
+
+      }
+
+      &:hover {
+        border-color: $primary;
+        box-shadow: 0 4px 20px 0 #00000066;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+
+      .block_title {
+        text-align: center;
+        margin-bottom: 14px;
+      }
+
+      &__items {
+        p {
+          padding-left: 22px;
+          margin-bottom: 8px;
+          position: relative;
+
+          &:before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            border-radius: 50%;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
