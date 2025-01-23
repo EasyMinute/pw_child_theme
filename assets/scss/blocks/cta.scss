@@ -1,0 +1,52 @@
+@import "../generals/colors";
+
+.cta {
+  margin-bottom: 120px;
+  @media screen and (max-width: 980px) {
+    margin-bottom: 80px;
+  }
+  
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+    background-color: $text-black;
+    border-radius: 20px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 980px) {
+      padding: 40px 20px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .section_title {
+      text-align: center;
+      width: 100%;
+      color: $white;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 20px;
+      @media screen and (max-width: 980px) {
+        margin-bottom: 14px;
+      }
+    }
+
+    .button {
+      margin: auto !important;
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 980px) {
+        width: 100%;
+      }
+    }
+  }
+}
