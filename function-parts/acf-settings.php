@@ -83,6 +83,18 @@ class Acf_Config {
                 'description' => __('Call to action', 'profit_whales'),
                 'icon' => 'editor-paste-text'
             ),
+            array(
+                'name' => 'single_image_banner',
+                'title' => __('Single Image Banner', 'profit_whales'),
+                'description' => __('', 'profit_whales'),
+                'icon' => 'cover-image'
+            ),
+            array(
+                'name' => 'brand_section',
+                'title' => __('Brands Section', 'profit_whales'),
+                'description' => __('Section with brands logo', 'profit_whales'),
+                'icon' => 'grid-view'
+            ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {

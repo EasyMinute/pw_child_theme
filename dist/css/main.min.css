@@ -119,6 +119,7 @@ img {
 @media screen and (max-width: 980px) {
   .contact_baner {
     margin-bottom: 80px;
+    margin-top: 60px;
   }
 }
 .contact_baner:before {
@@ -166,6 +167,8 @@ img {
 @media screen and (max-width: 980px) {
   .contact_baner__wrap__texts .section_title {
     margin-right: 0;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 .contact_baner__wrap__texts .section_text {
@@ -658,6 +661,15 @@ img {
 @media screen and (max-width: 980px) {
   .cta__wrap .button {
     width: 100%;
+  }
+}
+
+.pr-brands-section.brands-section {
+  padding: 80px 0;
+}
+@media screen and (max-width: 980px) {
+  .pr-brands-section.brands-section {
+    padding: 40px 0;
   }
 }
 
