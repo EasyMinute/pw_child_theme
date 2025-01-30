@@ -21,10 +21,14 @@ $contact_baner = get_field('contact_baner');
                 <h3 class="heading heading-h4-d block_title">
                     <?= get_the_title() ?>
                 </h3>
-                <?=  do_shortcode('[contact-form-7 id="2e4a10b" title="Contact form 1"]') ?>
+				<!-- Start of Meetings Embed Script -->
+					<div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/olexiy-denysenko?embed=true"></div>
+					<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+				  <!-- End of Meetings Embed Script -->
+                <?php  //do_shortcode('[contact-form-7 id="2e4a10b" title="Contact form 1"]') ?>
             </div>
         </div>
-        <?php if(!empty($contact_baner['redirect_link'])): ?>
+        <?php if(!empty($contact_baner['redirect_link']) && false): ?>
             <input type="hidden" value="<?php echo $contact_baner['redirect_link'] ?>" id="contact_redirect_url">
         <?php endif; ?>
     </div>
