@@ -8,6 +8,12 @@
 .heading {
   font-family: "Eina", sans-serif;
 
+  &-h1-d {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 80px;
+  }
+
   &-h2-d {
     font-size: 48px;
     font-weight: 500;
@@ -42,6 +48,14 @@
     @media screen and (max-width: 980px) {
       font-size: 28px;
       line-height: 36px;
+      font-weight: 500;
+    }
+  }
+
+  &-h3-m{
+    @media screen and (max-width: 980px) {
+      font-size: 24px;
+      line-height: 32px;
       font-weight: 500;
     }
   }

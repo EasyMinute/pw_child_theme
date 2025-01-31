@@ -1,0 +1,59 @@
+.icons_list {
+  padding: 80px 0 20px;
+  @media screen and (max-width: 980px){
+    padding: 40px 0 10px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+    @media screen and (max-width: 980px){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @media screen and (max-width: 980px){
+      display: block;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      @media screen and (max-width: 980px){
+        margin-bottom: 14px;
+      }
+
+      img {
+        min-width: 40px;
+        margin-right: 20px;
+        @media screen and (max-width: 980px){
+          min-width: 24px;
+        }
+      }
+
+      .block-text {
+        span {
+          font-size: 24px;
+          font-weight: 600;
+          @media screen and (max-width: 980px){
+            font-size: 20px;
+          }
+        }
+
+        p {
+          display: inline;
+          font-weight: 400;
+
+          strong, b {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

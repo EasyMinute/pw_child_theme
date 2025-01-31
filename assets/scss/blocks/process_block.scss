@@ -1,0 +1,120 @@
+@import "../generals/colors";
+
+.process_block {
+  padding: 80px 0;
+  @media screen and (max-width: 980px){
+    padding: 40px 0;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    padding: 40px 0;
+    border-bottom: 1px solid $border-light-gray;
+    @media screen and (max-width: 980px){
+      padding: 20px 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .block-title {
+      margin-bottom: 20px;
+      @media screen and (max-width: 980px){
+        margin-bottom: 14px;
+      }
+    }
+
+    &__description {
+      margin-bottom: 20px;
+
+      p, li {
+        font-weight: 400;
+        margin-bottom: 8px;
+        @media screen and (max-width: 980px){
+          margin-bottom: 14px;
+        }
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      ul {
+        li {
+          padding-left: 32px;
+          position: relative;
+
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-image: url('data:image/svg+xml,%3Csvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M21.7987 9.99999C22.2554 12.2413 21.9299 14.5714 20.8765 16.6018C19.8231 18.6322 18.1056 20.24 16.0102 21.1573C13.9148 22.0746 11.5683 22.2458 9.36196 21.6424C7.15563 21.0389 5.22285 19.6974 3.88593 17.8414C2.54902 15.9854 1.88878 13.7272 2.01532 11.4434C2.14186 9.15952 3.04754 6.98808 4.58131 5.29116C6.11508 3.59424 8.18424 2.47442 10.4437 2.11844C12.7032 1.76247 15.0164 2.19185 16.9977 3.33499" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M9 11L12 14L22 4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__caption {
+
+    }
+  }
+}
+
+.purple-caption {
+  background-color: $bg-primary;
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: 980px){
+    padding: 8px;
+  }
+
+  svg {
+    margin-right: 14px;
+    min-width: 40px;
+    @media screen and (max-width: 980px){
+      max-width: 24px;
+      min-width: 24px;
+    }
+  }
+
+  .body {
+
+    p {
+      font-weight: 400;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 24px;
+      text-decoration: none;
+      @media screen and (max-width: 980px){
+        font-size: 18px;
+      }
+    }
+  }
+}

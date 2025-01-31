@@ -11,3 +11,24 @@ function register_my_theme_menus() {
 }
 add_action('after_setup_theme', 'register_my_theme_menus');
 
+function register_cases_post_type() {
+    $cases_args = array(
+        'labels' => array(
+            'name' => _x('Case studies', 'post type general name'),
+            'singular_name' => _x('Case study', 'post type singular name'),
+        ),
+        'public' => true,
+        'show_in_rest' => true, // ✅ Enables the block editor
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'author',
+            'excerpt',
+            'comments'
+        ),
+    );
+
+    register_post_type('cases', $cases_args);
+}
+add_action('init', 'register_cases_post_type', 11);
