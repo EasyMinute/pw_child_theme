@@ -1027,6 +1027,7 @@ img {
   border-radius: 10px;
   width: 100%;
   max-width: calc(50% - 10px);
+  height: auto;
 }
 @media screen and (max-width: 980px) {
   .pins_image__wrap__image {
