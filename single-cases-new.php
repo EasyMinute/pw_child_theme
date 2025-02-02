@@ -1,4 +1,8 @@
 <?php
+/**
+ * Template Name: New template for cases
+ * Template Post Type: cases
+ */
 get_header();
 ?>
 
