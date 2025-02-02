@@ -5,7 +5,7 @@ function my_child_theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 
-    wp_enqueue_style( 'pw-main-style', get_stylesheet_directory_uri() . '/dist/css/main.min.css', array(), 1.2 , 'all' );
+    wp_enqueue_style( 'pw-main-style', get_stylesheet_directory_uri() . '/dist/css/main.min.css', array(), 1.31 , 'all' );
 
     wp_enqueue_script( 'pw-main', get_stylesheet_directory_uri() . '/dist/js/main.min.js', 'jQuery', 1.0, true );
 }
