@@ -1,7 +1,8 @@
 <?php
 $stats_cards = get_field('stats_cards');
 $title = $stats_cards['title'] ?? get_the_title();
-$cards = $stats_cards['cards']
+$cards = $stats_cards['cards'];
+$columns = $stats_cards['columns_format'];
 ?>
 
 <section class="stats_cards">
@@ -10,15 +11,16 @@ $cards = $stats_cards['cards']
             <?= $title ?>
         </h2>
 
-        <div class="stats_cards__wrap">
+        <div class="stats_cards__wrap <?= $columns ?? '' ?>">
             <?php foreach ($cards as $card) :
                 $card_title = $card['title'];
                 $card_text = $card['text'];
                 $color = $card['color'] ?? '#6D6DF6';
                 $icon_url = !empty($card['icon']) ? esc_url($card['icon']['url']) : '';
                 $icon_attr = !empty($card['icon']) ? esc_attr($card['icon']['alt']) : '';
+                $style = isset($card['style']) ? $card['style'] : 'normal';
             ?>
-                <div class="stat_card" style="border-color: <?= $color; ?>" >
+                <div class="stat_card <?= $style ?>" style="border-color: <?= $color; ?>" >
                     <div class="stat_card__head">
                         <img src="<?= $icon_url ?>" alt="<?= $icon_attr ?>">
                         <h3 class="heading heading-h3-d heading-h3-m block-title" style="color: <?= $color ?>">

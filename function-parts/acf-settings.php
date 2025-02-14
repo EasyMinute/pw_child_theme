@@ -157,6 +157,20 @@ class Acf_Config {
                 'icon' => 'arrow-right-alt',
                 'category' => 'pw-case-studies-blocks',
             ),
+            array(
+                'name' => 'archive_cases_banner',
+                'title' => __('Cases archive banner', 'profit_whales'),
+                'description' => __('Banner for cases archive', 'profit_whales'),
+                'icon' => 'cover-image',
+                'category' => 'pw-case-studies-blocks',
+            ),
+            array(
+                'name' => 'cases_list',
+                'title' => __('Cases list', 'profit_whales'),
+                'description' => __('List with cases', 'profit_whales'),
+                'icon' => 'excerpt-view',
+                'category' => 'pw-case-studies-blocks',
+            ),
         );
 
         if ( function_exists( 'acf_register_block_type' ) ) {
