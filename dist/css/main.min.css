@@ -1379,6 +1379,8 @@ img {
 }
 .ca_banner__wrap__logos img {
   margin-right: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 980px) {
   .ca_banner__wrap__logos img {
@@ -1392,6 +1394,8 @@ img {
 .ca_banner__wrap .ca_banner_card {
   position: absolute;
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 980px) {
   .ca_banner__wrap .ca_banner_card {
