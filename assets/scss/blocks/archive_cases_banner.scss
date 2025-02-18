@@ -1,6 +1,7 @@
 @import "../generals/colors";
 
 .ca_banner {
+  margin-top: 80px;
   padding: 80px 0;
   @media screen and (max-width: 980px) {
     padding: 40px 0;
@@ -64,17 +65,17 @@
         display: none;
       }
 
-      &:first-child {
+      &.card-0 {
         left: 0;
         top: -40px;
       }
 
-      &:nth-child(2) {
+      &.card-1 {
         right: 0;
         top: 20%;
       }
 
-      &:last-child {
+      &.card-2 {
         left: 5%;
         top: 45%;
       }

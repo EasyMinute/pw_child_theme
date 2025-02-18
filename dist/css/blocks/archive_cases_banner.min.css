@@ -2,6 +2,7 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/archive_cases_banner.scss ***!
   \******************************************************************************************************************************************************************************************************/
 .ca_banner {
+  margin-top: 80px;
   padding: 80px 0;
 }
 @media screen and (max-width: 980px) {
@@ -82,15 +83,15 @@
     display: none;
   }
 }
-.ca_banner__wrap .ca_banner_card:first-child {
+.ca_banner__wrap .ca_banner_card.card-0 {
   left: 0;
   top: -40px;
 }
-.ca_banner__wrap .ca_banner_card:nth-child(2) {
+.ca_banner__wrap .ca_banner_card.card-1 {
   right: 0;
   top: 20%;
 }
-.ca_banner__wrap .ca_banner_card:last-child {
+.ca_banner__wrap .ca_banner_card.card-2 {
   left: 5%;
   top: 45%;
 }
