@@ -61,6 +61,24 @@ $cases_query = new WP_Query($args);
                                 <img src="<?php echo esc_url(get_the_post_thumbnail_url()) ?>"
                                      alt="<?php echo esc_attr(get_the_post_thumbnail_caption()) ?>">
                             </a>
+                        <?php else:
+                            $blocks = parse_blocks(get_the_content());
+                            $banner_image = null;
+                            foreach ($blocks as $block) {
+                                if ($block['blockName'] === 'acf/banner') {
+                                    // Try getting 'image' field directly from ACF
+                                    $banner_image = get_field('cs_hero', get_the_ID())['image'];
+
+                                    break; // Exit loop once banner block is found
+                                }
+                            }
+                            if (!empty($banner_image)) : ?>
+                                <a href="<?= get_the_permalink() ?>" class="case_card__image">
+                                    <img src="<?php echo esc_url($banner_image['url']) ?>"
+                                         alt="<?php echo esc_attr($banner_image['alt']) ?>">
+                                </a>
+                            <?php endif;
+                        ?>
                         <?php endif; ?>
                     </article>
                 <?php endwhile; ?>
