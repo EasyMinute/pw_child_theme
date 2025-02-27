@@ -9,7 +9,7 @@ $results_block = get_field('results_block');
         </h2>
 
         <?php if(!empty($results_block['cards'])): ?>
-            <div class="results_block__wrap ">
+            <div class="results_block__wrap <?php echo $results_block['cards_style'] ?>">
                 <?php foreach ($results_block['cards']  as $key => $card) :
                     $card_text = $card['text'];
                     $color = $card['color'] ?? '#6D6DF6';
@@ -43,6 +43,18 @@ $results_block = get_field('results_block');
 
                 <div class="body body-20">
                     <?= $results_block['caption'] ?>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if(!empty($results_block['firecaption'])): ?>
+            <div class="results_block__caption fire-caption">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1693 24.1667C15.2743 24.1667 16.3341 23.7277 17.1155 22.9463C17.897 22.1649 18.3359 21.1051 18.3359 20C18.3359 17.7 17.5026 16.6667 16.6693 15C14.8826 11.4283 16.2959 8.24333 20.0026 5C20.8359 9.16667 23.3359 13.1667 26.6693 15.8333C30.0026 18.5 31.6693 21.6667 31.6693 25C31.6693 26.5321 31.3675 28.0492 30.7812 29.4646C30.1949 30.8801 29.3355 32.1662 28.2522 33.2496C27.1688 34.3329 25.8827 35.1923 24.4672 35.7786C23.0518 36.3649 21.5347 36.6667 20.0026 36.6667C18.4705 36.6667 16.9534 36.3649 15.538 35.7786C14.1225 35.1923 12.8364 34.3329 11.753 33.2496C10.6697 32.1662 9.81031 30.8801 9.22401 29.4646C8.6377 28.0492 8.33594 26.5321 8.33594 25C8.33594 23.0783 9.0576 21.1767 10.0026 20C10.0026 21.1051 10.4416 22.1649 11.223 22.9463C12.0044 23.7277 13.0642 24.1667 14.1693 24.1667Z" stroke="#FEA800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <div class="heading heading-h3-d">
+                    <?= $results_block['firecaption'] ?>
                 </div>
             </div>
         <?php endif; ?>

@@ -1,0 +1,11 @@
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/brands_section.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.pr-brands-section.brands-section {
+  padding: 80px 0;
+}
+@media screen and (max-width: 980px) {
+  .pr-brands-section.brands-section {
+    padding: 40px 0;
+  }
+}

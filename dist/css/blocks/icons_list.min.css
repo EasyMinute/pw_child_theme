@@ -1,0 +1,71 @@
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/icons_list.scss ***!
+  \********************************************************************************************************************************************************************************************/
+.icons_list {
+  padding: 80px 0 20px;
+}
+@media screen and (max-width: 980px) {
+  .icons_list {
+    padding: 40px 0 10px;
+  }
+}
+.icons_list .section-title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 980px) {
+  .icons_list .section-title {
+    margin-bottom: 20px;
+  }
+}
+.icons_list__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 980px) {
+  .icons_list__wrap {
+    display: block;
+  }
+}
+.icons_list__wrap__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .icons_list__wrap__item {
+    margin-bottom: 14px;
+  }
+}
+.icons_list__wrap__item img {
+  min-width: 40px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 980px) {
+  .icons_list__wrap__item img {
+    min-width: 24px;
+  }
+}
+.icons_list__wrap__item .block-text span {
+  font-size: 24px;
+  font-weight: 600;
+}
+@media screen and (max-width: 980px) {
+  .icons_list__wrap__item .block-text span {
+    font-size: 20px;
+  }
+}
+.icons_list__wrap__item .block-text p {
+  display: inline;
+  font-weight: 400;
+}
+.icons_list__wrap__item .block-text p strong, .icons_list__wrap__item .block-text p b {
+  font-weight: 600;
+}

@@ -1,0 +1,61 @@
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./scss/blocks/text_image.scss ***!
+  \********************************************************************************************************************************************************************************************/
+.text_image {
+  padding: 80px 0;
+}
+@media screen and (max-width: 980px) {
+  .text_image {
+    padding: 40px 0;
+  }
+}
+.text_image__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 980px) {
+  .text_image__wrap {
+    display: block;
+  }
+}
+.text_image__wrap__texts .section-title {
+  margin-bottom: 20px;
+}
+.text_image__wrap__texts .section-text p {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.text_image__wrap__texts .section-text ul li {
+  padding-left: 32px;
+  font-weight: 400;
+  position: relative;
+}
+.text_image__wrap__texts .section-text ul li:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M21.7987 9.99999C22.2554 12.2413 21.9299 14.5714 20.8765 16.6018C19.8231 18.6322 18.1056 20.24 16.0102 21.1573C13.9148 22.0746 11.5683 22.2458 9.36196 21.6424C7.15563 21.0389 5.22285 19.6974 3.88593 17.8414C2.54902 15.9854 1.88878 13.7272 2.01532 11.4434C2.14186 9.15952 3.04754 6.98808 4.58131 5.29116C6.11508 3.59424 8.18424 2.47442 10.4437 2.11844C12.7032 1.76247 15.0164 2.19185 16.9977 3.33499\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/%3E%3Cpath d=\"M9 11L12 14L22 4\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.text_image__wrap__texts .section-text strong {
+  font-weight: 600;
+}
+.text_image__wrap__image {
+  border-radius: 10px;
+}
+@media screen and (max-width: 980px) {
+  .text_image__wrap__image {
+    width: 100%;
+  }
+}

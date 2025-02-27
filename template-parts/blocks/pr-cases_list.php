@@ -64,10 +64,12 @@ $cases_query = new WP_Query($args);
                         <?php else:
                             $blocks = parse_blocks(get_the_content());
                             $banner_image = null;
+                            $id = get_the_ID();
+                            var_dump(get_fields($id));
                             foreach ($blocks as $block) {
-                                if ($block['blockName'] === 'acf/banner') {
+                                if ($block['blockName'] === 'acf/cs-hero-block') {
                                     // Try getting 'image' field directly from ACF
-                                    $banner_image = get_field('cs_hero', get_the_ID())['image'];
+                                    $banner_image = get_field('cs_hero', $id)['image'];
 
                                     break; // Exit loop once banner block is found
                                 }
